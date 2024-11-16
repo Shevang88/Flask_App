@@ -10,5 +10,9 @@ def hello_world():
 def goodbye():
     return jsonify({'message': 'Goodbye!'})
 
+@app.route('/api/goodnight', methods=['GET'])
+def goodnight():
+    return jsonify({'message': 'Honey Goodbye!'})
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
